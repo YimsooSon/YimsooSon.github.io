@@ -133,13 +133,13 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-31T06:18:12.000Z">2020-03-31</time>
+                <time class="level-item has-text-grey" datetime="2020-03-31T06:35:59.000Z">2020-03-31</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds read (About 0 words)
+                    2 minutes read (About 368 words)
                 </span>
                 
                 
@@ -148,11 +148,44 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/03/31/TEst/">TEst</a>
+                <a class="has-link-black-ter" href="/2020/03/31/3.Server/">Server</a>
             
         </h1>
         <div class="content">
-            
+            <h1 id="Create-Server-and-Client"><a href="#Create-Server-and-Client" class="headerlink" title="Create Server and Client"></a>Create Server and Client</h1><p>-</p>
+<h2 id="1-1-Setting-enviroment"><a href="#1-1-Setting-enviroment" class="headerlink" title="1.1 Setting enviroment"></a>1.1 Setting enviroment</h2><p>Link  = <a href="https://cafe.naver.com/thisislinux">https://cafe.naver.com/thisislinux</a></p>
+<p>( For traing) 1.1.0 Download Vmware workstation 12 Pro  and Vmware workstation</p>
+<p>1.1.1 Download Ubuntu Desktop 16.04, Ubuntu Server 16.04</p>
+<p>1.1.2 Download Putty // ( Remote Control  )</p>
+<p>1.1.3 Download Maria DB // (DB)</p>
+<p>1.1.4 Download Xe Core ( Linux )  //  ( Website )</p>
+<p>1.1.5 Download ownclould (Linux) // (WebCloud )</p>
+<p>1.1.6 Download libowncloudsync0 etc. five files (Linux)  // (WebCloud)</p>
+<p>1.1.7 Download owncloud (Winddow) file in the Client </p>
+<h2 id="1-2-Create-the-Website"><a href="#1-2-Create-the-Website" class="headerlink" title="1.2 Create the Website"></a>1.2 Create the Website</h2><h5 id="1-2-1-If-you-use-Linux-Os-You-have-to-install-APM-APM-is-Apache-WebServer-PHP-languege-MariaDB"><a href="#1-2-1-If-you-use-Linux-Os-You-have-to-install-APM-APM-is-Apache-WebServer-PHP-languege-MariaDB" class="headerlink" title="1.2.1  If you use Linux Os, You have to install APM. APM is Apache(WebServer) + PHP (languege) + MariaDB."></a>1.2.1  If you use Linux Os, You have to install APM. APM is Apache(WebServer) + PHP (languege) + MariaDB.</h5><h4 id="1-2-2"><a href="#1-2-2" class="headerlink" title="1.2.2"></a>1.2.2</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">apt-get -y install lamp-server*</span><br><span class="line"></span><br><span class="line">1234 </span><br><span class="line"></span><br><span class="line">dpkg -l apache2 </span><br><span class="line"></span><br><span class="line">systemctl restart apache2 </span><br><span class="line"></span><br><span class="line">systemctl enable apache2 </span><br><span class="line"></span><br><span class="line">systemctl restart mysql </span><br><span class="line"></span><br><span class="line">systemctl enable mysql </span><br><span class="line"></span><br><span class="line">open the firefox and search http:&#x2F;&#x2F;localhost </span><br><span class="line"></span><br><span class="line">cd &#x2F;var&#x2F;www&#x2F;html </span><br><span class="line"></span><br><span class="line">vi phpinfo.php </span><br><span class="line"></span><br><span class="line">&lt;?php phpinfo(); ?&gt; </span><br><span class="line"></span><br><span class="line">check http:&#x2F;&#x2F;localhost&#x2F;phpinfo.php </span><br><span class="line"></span><br><span class="line">ufw allow 80</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="1-2-3"><a href="#1-2-3" class="headerlink" title="1.2.3"></a>1.2.3</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">cd </span><br><span class="line"></span><br><span class="line">apt-get -y install php php-gd php-xml  </span><br><span class="line"></span><br><span class="line">cd &#x2F;var&#x2F;www&#x2F;html&#x2F;  </span><br><span class="line"></span><br><span class="line">mv &#x2F;root&#x2F;다운로드&#x2F;xe.zip . </span><br><span class="line"></span><br><span class="line">unzip xe.zip </span><br><span class="line"></span><br><span class="line">ls -l </span><br><span class="line"></span><br><span class="line">chmod 707 xe </span><br><span class="line"></span><br><span class="line">cd xe </span><br><span class="line"></span><br><span class="line">cd modules&#x2F; </span><br><span class="line"></span><br><span class="line">cd </span><br><span class="line"></span><br><span class="line">mysql -u root -p1234</span><br><span class="line"></span><br><span class="line">GRANT ALL PRIVILEGES ON xeDB.* TO xeUser@localhost IDENTIFIED BY &#39;1234&#39;;</span><br><span class="line"></span><br><span class="line">exit</span><br><span class="line"></span><br><span class="line">CREATE DATABASE xeDB;</span><br><span class="line"></span><br><span class="line">exit</span><br></pre></td></tr></table></figure>
+
+
+<h5 id="1-2-4"><a href="#1-2-4" class="headerlink" title="1.2.4"></a>1.2.4</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">search 192.168.111.100&#x2F;xe</span><br><span class="line"></span><br><span class="line">create id and password</span><br><span class="line"></span><br><span class="line">set the korea time</span><br><span class="line"></span><br><span class="line">click the start button</span><br><span class="line"></span><br><span class="line">click 사이트 제작&#x2F;편집 -&gt; 사이트 메뉴편집 </span><br><span class="line"></span><br><span class="line">vi &#x2F;etc&#x2F;php&#x2F;7.0&#x2F;apache2&#x2F;php.ini</span><br><span class="line"></span><br><span class="line">i</span><br><span class="line"></span><br><span class="line">set nu</span><br><span class="line"></span><br><span class="line">line 368 -&gt; change the max_execution time to 700</span><br><span class="line"></span><br><span class="line">line 656 -&gt; post_max_size &#x3D; 3G</span><br><span class="line"></span><br><span class="line">line 797 -&gt; upload max file size &#x3D; 3G</span><br><span class="line"></span><br><span class="line">esc</span><br><span class="line"></span><br><span class="line">:wq</span><br><span class="line"></span><br><span class="line">systemctl restart apache2</span><br><span class="line"></span><br><span class="line">192.168.111.100&#x2F;xe&#x2F;admin</span><br><span class="line"></span><br><span class="line">설정 -&gt; 파일업로드 -&gt; 파일크기제한 3 G</span><br></pre></td></tr></table></figure>
+
+
+
+
+<h1 id="1-3-Create-the-Webcloud"><a href="#1-3-Create-the-Webcloud" class="headerlink" title="1.3 Create the Webcloud"></a>1.3 Create the Webcloud</h1><ul>
+<li>server</li>
+</ul>
+<figure class="highlight java"><figcaption><span>.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">cd /<span class="keyword">var</span>/www/html</span><br><span class="line">apt-get -y install php-zip php-mbstring php-curl</span><br><span class="line">mv ~/다운로드/owcloud (tab)    </span><br><span class="line">ls -l</span><br><span class="line"><span class="function">tar xfj <span class="title">ow</span><span class="params">(tab)</span></span></span><br><span class="line"><span class="function">chmod 707 owncloud</span></span><br><span class="line"><span class="function">chown -R www-data.www-data owncloud</span></span><br><span class="line"><span class="function">ls -l</span></span><br><span class="line"><span class="function">systemctl restar apache2</span></span><br><span class="line"><span class="function">ufw allow 443</span></span><br></pre></td></tr></table></figure>
+
+
+<ul>
+<li>client</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">192.168.111.100&#x2F;owncloud</span><br><span class="line"></span><br><span class="line">create admin and password</span><br><span class="line"></span><br><span class="line">xeUser  -&gt; 1234 -&gt;xeDB -&gt; 설치완료</span><br><span class="line"></span><br><span class="line">돋보기 옆 -&gt; 사용자 -&gt; 사용자 &#x3D;ubuntu ,비번설정&#x3D;1234 -&gt; 그룹추가 user -&gt; 만들기</span><br><span class="line"></span><br><span class="line">설정 -&gt; 용량조절 </span><br><span class="line"></span><br><span class="line">owncloud setup 파일 설치</span><br><span class="line"></span><br><span class="line">server address 에  http:&#x2F;&#x2F;192.168.111.100&#x2F;owncloud&#x2F;</span><br><span class="line"></span><br><span class="line">사용자 &#x3D; ubuntu 비번 &#x3D; 1234</span><br><span class="line"></span><br><span class="line">local folder 에 owncloud 폴더 생성</span><br><span class="line"></span><br><span class="line">finish</span><br></pre></td></tr></table></figure>
+
+
         </div>
         
         
@@ -174,13 +207,13 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-31T06:03:02.153Z">2020-03-31</time>
+                <time class="level-item has-text-grey" datetime="2020-03-31T06:34:58.000Z">2020-03-31</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 123 words)
+                    a minute read (About 205 words)
                 </span>
                 
                 
@@ -189,24 +222,98 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/03/31/hello-world/">Hello World</a>
+                <a class="has-link-black-ter" href="/2020/03/31/2.Optimization/">Optimization</a>
             
         </h1>
         <div class="content">
-            <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+            <h1 id="Searching-and-Optimization"><a href="#Searching-and-Optimization" class="headerlink" title="Searching and Optimization"></a>Searching and Optimization</h1><p>-</p>
+<h2 id="2-1-State-space-and-Searching"><a href="#2-1-State-space-and-Searching" class="headerlink" title="2.1 State space and Searching"></a>2.1 State space and Searching</h2><p>world : The object including with problem </p>
+<p>state : The meaning is situation at the special point world</p>
+<p>state space : The set of every state coming from problem’s initial state </p>
+<p>initial state : The state of giving problem</p>
+<p>-</p>
+<h2 id="2-2-Blind-search"><a href="#2-2-Blind-search" class="headerlink" title="2.2 Blind search"></a>2.2 Blind search</h2><p>Blind search : The method find the solution following to fixed order</p>
+<h4 id="2-2-1-DFS-Depth-first-search"><a href="#2-2-1-DFS-Depth-first-search" class="headerlink" title="2.2.1 DFS (Depth first search)"></a>2.2.1 DFS (Depth first search)</h4><p>Depth-first search : Starting at the loof node and navigate in the depth direction<br>If you can’t go any further, backtracking</p>
+<h4 id="2-2-2-BFS-Breadth-first-search"><a href="#2-2-2-BFS-Breadth-first-search" class="headerlink" title="2.2.2 BFS(Breadth first search)"></a>2.2.2 BFS(Breadth first search)</h4><p>Breadth - first search : Starting at the child node and navigate in the other child node</p>
+<h4 id="2-2-3-Iterative-deepening-search"><a href="#2-2-3-Iterative-deepening-search" class="headerlink" title="2.2.3 Iterative deepening search"></a>2.2.3 Iterative deepening search</h4><p>Iterative-deeping search : Repeatedly applied Depth-first search</p>
+<h4 id="2-2-4-Bidirectional-search"><a href="#2-2-4-Bidirectional-search" class="headerlink" title="2.2.4 Bidirectional search"></a>2.2.4 Bidirectional search</h4><p>Bidirectional search : Proceeding simultaneously intitial node and destination node</p>
+<p>-</p>
+<h2 id="Informed-search"><a href="#Informed-search" class="headerlink" title="Informed search"></a>Informed search</h2><p>-</p>
+<h4 id="2-3-1-Heuristic-search"><a href="#2-3-1-Heuristic-search" class="headerlink" title="2.3.1 Heuristic search"></a>2.3.1 Heuristic search</h4><p>Heuristic earch : Guessing the value when it doesn’t much information or time</p>
+<h4 id="2-3-2-Hill-climbing-method"><a href="#2-3-2-Hill-climbing-method" class="headerlink" title="2.3.2 Hill climbing method"></a>2.3.2 Hill climbing method</h4><p>Hill climbing method : The searching method expand one node which is high vale by Heyristic search </p>
+<h4 id="2-3-3-Best-first-search"><a href="#2-3-3-Best-first-search" class="headerlink" title="2.3.3 Best first search"></a>2.3.3 Best first search</h4><h4 id="2-3-4-Beam-search"><a href="#2-3-4-Beam-search" class="headerlink" title="2.3.4 Beam search"></a>2.3.4 Beam search</h4><h4 id="2-3-5-A-algorithm"><a href="#2-3-5-A-algorithm" class="headerlink" title="2.3.5 A* algorithm"></a>2.3.5 A* algorithm</h4><p>-</p>
+<h2 id="Game-search"><a href="#Game-search" class="headerlink" title="Game search"></a>Game search</h2><p>-</p>
+<h4 id="2-4-1-Mini-max-game-tree"><a href="#2-4-1-Mini-max-game-tree" class="headerlink" title="2.4.1 Mini-max game tree"></a>2.4.1 Mini-max game tree</h4><h4 id="2-4-2-a-b-pruning"><a href="#2-4-2-a-b-pruning" class="headerlink" title="2.4.2 a - b pruning"></a>2.4.2 a - b pruning</h4><h4 id="2-4-3-Monte-carlo-tree-search"><a href="#2-4-3-Monte-carlo-tree-search" class="headerlink" title="2.4.3 Monte carlo tree search"></a>2.4.3 Monte carlo tree search</h4><p>-</p>
+<h2 id="Constraint-satisfaction-problem"><a href="#Constraint-satisfaction-problem" class="headerlink" title="Constraint satisfaction problem"></a>Constraint satisfaction problem</h2><p>-</p>
+<h4 id="2-5-1-Backtracking-search"><a href="#2-5-1-Backtracking-search" class="headerlink" title="2.5.1 Backtracking search"></a>2.5.1 Backtracking search</h4><h4 id="2-5-2-Constraint-propagation"><a href="#2-5-2-Constraint-propagation" class="headerlink" title="2.5.2 Constraint propagation"></a>2.5.2 Constraint propagation</h4><p>-</p>
+<h1 id="Optimization"><a href="#Optimization" class="headerlink" title="Optimization"></a>Optimization</h1><p>-</p>
+<h2 id="Traveling-salesperson-problem"><a href="#Traveling-salesperson-problem" class="headerlink" title="Traveling salesperson problem"></a>Traveling salesperson problem</h2><p>-</p>
+<h4 id="2-6-1-Genetic-algorithm"><a href="#2-6-1-Genetic-algorithm" class="headerlink" title="2.6.1 Genetic algorithm"></a>2.6.1 Genetic algorithm</h4><h4 id="2-6-2-Meta-heuristic"><a href="#2-6-2-Meta-heuristic" class="headerlink" title="2.6.2 Meta - heuristic"></a>2.6.2 Meta - heuristic</h4><h2 id="Function-optimization"><a href="#Function-optimization" class="headerlink" title="Function optimization"></a>Function optimization</h2><p>-</p>
+<h4 id="2-6-3-Function-optimization-problem"><a href="#2-6-3-Function-optimization-problem" class="headerlink" title="2.6.3 Function optimization problem"></a>2.6.3 Function optimization problem</h4><h4 id="2-6-4-Constrained-optimization-problem"><a href="#2-6-4-Constrained-optimization-problem" class="headerlink" title="2.6.4 Constrained optimization problem"></a>2.6.4 Constrained optimization problem</h4><h4 id="2-6-5-Gradient-descent-method"><a href="#2-6-5-Gradient-descent-method" class="headerlink" title="2.6.5 Gradient descent method"></a>2.6.5 Gradient descent method</h4>
+        </div>
+        
+        
+        
+    </div>
+</div>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
+
+
+
+    
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-31T06:18:12.000Z">2020-03-31</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    a minute read (About 171 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/31/1_Ubuntu/">Ubuntu</a>
+            
+        </h1>
+        <div class="content">
+            <hr>
+<p>title: Ubuntu<br>date: 2020-03-23 11:10:20<br>tags: #Ubuntu</p>
+<hr>
+<h1 id="Install-Ubuntu-on-my-desktop"><a href="#Install-Ubuntu-on-my-desktop" class="headerlink" title="Install Ubuntu on my desktop"></a>Install Ubuntu on my desktop</h1><h2 id="What-is-the-Ubuntu"><a href="#What-is-the-Ubuntu" class="headerlink" title="What is the Ubuntu?"></a>What is the Ubuntu?</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Ubuntu is a <span class="built_in">free</span> <span class="keyword">and</span> <span class="built_in">open</span>-source Linux distribution based on Debian.</span><br><span class="line">Ubuntu is ofiicially released in three edition : Desktop, <span class="built_in">Server</span>, <span class="keyword">and</span> Core <span class="keyword">for</span> the internet of things devices <span class="keyword">and</span> robots</span><br><span class="line">All the editions can rub on the computer alone,<span class="keyword">or</span> in a <span class="keyword">virtual</span> machine</span><br><span class="line"></span><br><span class="line">-from Wikipedia-</span><br></pre></td></tr></table></figure>
+
+
+<hr>
+<h5 id="Reference-Youtube-link"><a href="#Reference-Youtube-link" class="headerlink" title="Reference Youtube link"></a>Reference Youtube link</h5><p><a href="https://www.youtube.com/watch?v=-hsTerGam3Y&amp;list=PLVsNizTWUw7H0hL3MIk4POxadZVwNOycL&amp;index=1">https://www.youtube.com/watch?v=-hsTerGam3Y&amp;list=PLVsNizTWUw7H0hL3MIk4POxadZVwNOycL&amp;index=1</a></p>
+<hr>
+<h2 id="Step-01-Install-the-VMware"><a href="#Step-01-Install-the-VMware" class="headerlink" title="Step 01 Install the VMware"></a>Step 01 Install the VMware</h2><p>You would be better to download VMware Workstation Pro version, Because Pro version can use snapcapture function which is back up function. When you install the VMware file, You can use workstation and player.</p>
+<h2 id="Step-02-Build-four-virtual-Machine"><a href="#Step-02-Build-four-virtual-Machine" class="headerlink" title="Step 02 Build four virtual Machine"></a>Step 02 Build four virtual Machine</h2><ol>
+<li>Install the Server computer in VMware player</li>
+<li>Install the Server(B) computer in player</li>
+<li>install the Client computer in player</li>
+<li>Install the WinClient computer in player</li>
+</ol>
+<p>** Download Server, Server(B), Client file Link &lt; <a href="https://cafe.naver.com/thisisLinux">https://cafe.naver.com/thisisLinux</a> &gt; </p>
+<p>** Download WinClient file(Win 8,1 version) Link &lt; <a href="https://cafe.naver.com/thisislinux/5277">https://cafe.naver.com/thisislinux/5277</a> &gt; </p>
+<ul>
+<li>Tip Answer from blogger </li>
+</ul>
+ <figure class="highlight c"><figcaption><span>.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">내용 ```c .md</span><br><span class="line">내용 </span><br><span class="line">내용</span><br></pre></td></tr></table></figure>
+
+<pre><code></code></pre>
         </div>
         
         
@@ -266,7 +373,7 @@
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            2
+                            3
                         </p>
                     </a>
                 </div>
@@ -411,16 +518,16 @@
         
         <article class="media">
             
-            <a href="/2020/03/31/TEst/" class="media-left">
+            <a href="/2020/03/31/3.Server/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="TEst">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Server">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-31T06:18:12.000Z">2020-03-31</time></div>
-                    <a href="/2020/03/31/TEst/" class="title has-link-black-ter is-size-6 has-text-weight-normal">TEst</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-31T06:35:59.000Z">2020-03-31</time></div>
+                    <a href="/2020/03/31/3.Server/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Server</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -430,16 +537,35 @@
         
         <article class="media">
             
-            <a href="/2020/03/31/hello-world/" class="media-left">
+            <a href="/2020/03/31/2.Optimization/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Optimization">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-31T06:03:02.153Z">2020-03-31</time></div>
-                    <a href="/2020/03/31/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-31T06:34:58.000Z">2020-03-31</time></div>
+                    <a href="/2020/03/31/2.Optimization/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Optimization</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/31/1_Ubuntu/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Ubuntu">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-31T06:18:12.000Z">2020-03-31</time></div>
+                    <a href="/2020/03/31/1_Ubuntu/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Ubuntu</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -464,7 +590,7 @@
                     <span class="level-item">March 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
@@ -506,16 +632,16 @@
         
         <article class="media">
             
-            <a href="/2020/03/31/TEst/" class="media-left">
+            <a href="/2020/03/31/3.Server/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="TEst">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Server">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-31T06:18:12.000Z">2020-03-31</time></div>
-                    <a href="/2020/03/31/TEst/" class="title has-link-black-ter is-size-6 has-text-weight-normal">TEst</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-31T06:35:59.000Z">2020-03-31</time></div>
+                    <a href="/2020/03/31/3.Server/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Server</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -525,16 +651,35 @@
         
         <article class="media">
             
-            <a href="/2020/03/31/hello-world/" class="media-left">
+            <a href="/2020/03/31/2.Optimization/" class="media-left">
                 <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Hello World">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Optimization">
                 </p>
             </a>
             
             <div class="media-content">
                 <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-31T06:03:02.153Z">2020-03-31</time></div>
-                    <a href="/2020/03/31/hello-world/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Hello World</a>
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-31T06:34:58.000Z">2020-03-31</time></div>
+                    <a href="/2020/03/31/2.Optimization/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Optimization</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/31/1_Ubuntu/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Ubuntu">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-31T06:18:12.000Z">2020-03-31</time></div>
+                    <a href="/2020/03/31/1_Ubuntu/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Ubuntu</a>
                     <p class="is-size-7 is-uppercase">
                         
                     </p>
@@ -559,7 +704,7 @@
                     <span class="level-item">March 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
